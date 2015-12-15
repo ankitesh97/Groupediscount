@@ -13,7 +13,7 @@ class PropertySearchController < ApplicationController
 
 	def index
 
-	  @property = Project.where(Project_name: $search_property)
+	  @property = Project.where('lower(Project_name) = ?', $search_property.downcase)
       render json: @property
       
 		
