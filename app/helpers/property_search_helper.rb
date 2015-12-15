@@ -1,0 +1,2 @@
+module PropertySearchHelper
+end

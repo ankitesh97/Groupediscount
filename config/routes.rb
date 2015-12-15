@@ -11,6 +11,7 @@ Rails.application.routes.draw do
   resources :projects
   resources :builders
   resources :location_filter
+  resources :property_search
 
   namespace :api, path: '', defaults: {format: 'json'} do
   namespace :v1 do
